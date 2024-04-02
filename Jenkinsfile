@@ -13,7 +13,7 @@ pipeline {
             steps {
                 withSonarQubeEnv(installationName: 'sq1') {
                     bat "npm install sonar-scanner"
-                    bat 'npx sonar-scanner -X -X -Dsonar.projectKey=mywebapp'
+                    bat 'npx sonar-scanner -X -X -Dsonar.projectKey=simple-express-app'
                 }
             }
         }
